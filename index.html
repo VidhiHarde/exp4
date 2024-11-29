@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Welcome to Simple Calculator</h1>
+    <h2>Enter your personal details!</h2>
+
+    <!-- Web Form with Fields -->
+    <form id="userForm">
+        <!-- Name Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Gender (Radio Buttons) -->
+        <label>Gender:</label>
+        <input type="checkbox" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="checkbox" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <!-- Age Dropdown -->
+        <label for="age">Age Range:</label>
+        <select id="age" name="age" required>
+            <option value="">Select</option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+        </select><br><br>
+
+        <!-- Number Inputs for Arithmetic Operations -->
+        <h2>Here's the Calculator!</h2>
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" placeholder="Enter first number" required><br><br>
+
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" placeholder="Enter second number" required><br><br>
+
+        <!-- Buttons for Operations -->
+        <button type="button" onclick="calculate('add')">Add</button>
+        <button type="button" onclick="calculate('subtract')">Subtract</button>
+        <button type="button" onclick="calculate('multiply')">Multiply</button>
+        <button type="button" onclick="calculate('divide')">Divide</button><br><br>
+
+        <!-- Display Result of Operations -->
+        <p id="result">Result: </p><br>
+
+        <!-- Submit Form Button -->
+        <input type="submit" value="Submit Form">
+    </form>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
